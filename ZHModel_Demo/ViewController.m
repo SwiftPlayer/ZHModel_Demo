@@ -68,7 +68,7 @@
 
 - (IBAction)requestBtn1:(id)sender{
     [self.viewModel sendType1Request:@{}];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.responseModelTextView.text = [NSString stringWithFormat:@" self.responseModel_1.responseCode:%@\n self.responseModel_1.responseMsg:%@\n self.responseModel_1.remark:%@\n self.responseModel_1.userName:%@\n self.responseModel_1.taskNo:%ld\n",self.responseModel_1.responseCode,self.responseModel_1.responseMsg,self.responseModel_1.remark,self.responseModel_1.userName,(long)self.responseModel_1.taskNo];
     });
     
