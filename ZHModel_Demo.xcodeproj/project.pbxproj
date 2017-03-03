@@ -14,6 +14,10 @@
 		A5E96E741E693B440093FD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E96E731E693B440093FD42 /* Assets.xcassets */; };
 		A5E96E771E693B440093FD42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E96E751E693B440093FD42 /* LaunchScreen.storyboard */; };
 		A5E96E821E693B440093FD42 /* ZHModel_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96E811E693B440093FD42 /* ZHModel_DemoTests.m */; };
+		A5E96E941E69438C0093FD42 /* ZHResponseBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96E931E69438C0093FD42 /* ZHResponseBaseModel.m */; };
+		A5E96E9A1E699E9E0093FD42 /* ZHParamBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96E991E699E9E0093FD42 /* ZHParamBaseModel.m */; };
+		A5E96E9D1E699EE20093FD42 /* ZHViewBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96E9C1E699EE20093FD42 /* ZHViewBaseModel.m */; };
+		A5E96EA61E69A94D0093FD42 /* ZHRequestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96EA41E69A94D0093FD42 /* ZHRequestMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		A5E96E7D1E693B440093FD42 /* ZHModel_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHModel_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E96E811E693B440093FD42 /* ZHModel_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHModel_DemoTests.m; sourceTree = "<group>"; };
 		A5E96E831E693B440093FD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E96E921E69438C0093FD42 /* ZHResponseBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHResponseBaseModel.h; sourceTree = "<group>"; };
+		A5E96E931E69438C0093FD42 /* ZHResponseBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHResponseBaseModel.m; sourceTree = "<group>"; };
+		A5E96E981E699E9E0093FD42 /* ZHParamBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHParamBaseModel.h; sourceTree = "<group>"; };
+		A5E96E991E699E9E0093FD42 /* ZHParamBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHParamBaseModel.m; sourceTree = "<group>"; };
+		A5E96E9B1E699EE20093FD42 /* ZHViewBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHViewBaseModel.h; sourceTree = "<group>"; };
+		A5E96E9C1E699EE20093FD42 /* ZHViewBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHViewBaseModel.m; sourceTree = "<group>"; };
+		A5E96EA31E69A94D0093FD42 /* ZHRequestMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHRequestMethod.h; sourceTree = "<group>"; };
+		A5E96EA41E69A94D0093FD42 /* ZHRequestMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHRequestMethod.m; sourceTree = "<group>"; };
+		A5E96EAB1E69B10E0093FD42 /* Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configure.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,8 @@
 		A5E96E661E693B440093FD42 /* ZHModel_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A5E96E911E69433E0093FD42 /* ZHModel */,
+				A5E96E9F1E69A8020093FD42 /* Classes */,
 				A5E96E6A1E693B440093FD42 /* AppDelegate.h */,
 				A5E96E6B1E693B440093FD42 /* AppDelegate.m */,
 				A5E96E6D1E693B440093FD42 /* ViewController.h */,
@@ -109,6 +124,45 @@
 				A5E96E831E693B440093FD42 /* Info.plist */,
 			);
 			path = ZHModel_DemoTests;
+			sourceTree = "<group>";
+		};
+		A5E96E911E69433E0093FD42 /* ZHModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5E96E921E69438C0093FD42 /* ZHResponseBaseModel.h */,
+				A5E96E931E69438C0093FD42 /* ZHResponseBaseModel.m */,
+				A5E96E981E699E9E0093FD42 /* ZHParamBaseModel.h */,
+				A5E96E991E699E9E0093FD42 /* ZHParamBaseModel.m */,
+				A5E96E9B1E699EE20093FD42 /* ZHViewBaseModel.h */,
+				A5E96E9C1E699EE20093FD42 /* ZHViewBaseModel.m */,
+			);
+			path = ZHModel;
+			sourceTree = "<group>";
+		};
+		A5E96E9F1E69A8020093FD42 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5E96EAA1E69B10E0093FD42 /* Config */,
+				A5E96EA01E69A94D0093FD42 /* NetRequest */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A5E96EA01E69A94D0093FD42 /* NetRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A5E96EA31E69A94D0093FD42 /* ZHRequestMethod.h */,
+				A5E96EA41E69A94D0093FD42 /* ZHRequestMethod.m */,
+			);
+			path = NetRequest;
+			sourceTree = "<group>";
+		};
+		A5E96EAA1E69B10E0093FD42 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A5E96EAB1E69B10E0093FD42 /* Configure.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E96E9A1E699E9E0093FD42 /* ZHParamBaseModel.m in Sources */,
+				A5E96E9D1E699EE20093FD42 /* ZHViewBaseModel.m in Sources */,
 				A5E96E6F1E693B440093FD42 /* ViewController.m in Sources */,
+				A5E96E941E69438C0093FD42 /* ZHResponseBaseModel.m in Sources */,
+				A5E96EA61E69A94D0093FD42 /* ZHRequestMethod.m in Sources */,
 				A5E96E6C1E693B440093FD42 /* AppDelegate.m in Sources */,
 				A5E96E691E693B440093FD42 /* main.m in Sources */,
 			);
@@ -297,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -338,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -410,6 +468,7 @@
 				A5E96E881E693B440093FD42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E96E891E693B440093FD42 /* Build configuration list for PBXNativeTarget "ZHModel_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +477,7 @@
 				A5E96E8B1E693B440093FD42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
