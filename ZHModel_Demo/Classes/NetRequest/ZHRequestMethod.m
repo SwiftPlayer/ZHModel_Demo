@@ -61,7 +61,8 @@
 + (void)requestType2:(NSDictionary*)param
                success:(void (^)(id responseObject))success
                 failure:(void (^)(NSUInteger statusCode, NSString *error))failure{
-    NSString *jsonStr = @"{\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"remark\":\"交流学习\",\"userName\":\"简书Haofree\",\"taskNo\":\"007\",\"subInfo\":{\"type\":\"info类型\",\"comment\":\"info内容\"}}";    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
+    NSString *jsonStr = @"{\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"remark\":\"交流学习\",\"userName\":\"简书Haofree\",\"taskNo\":\"007\",\"subInfo\":{\"type\":\"info类型\",\"comment\":\"info内容\"}}";
+    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
     success(responsejsonObject);
 }
 
@@ -69,7 +70,8 @@
 + (void)requestType3:(NSDictionary*)param
                success:(void (^)(id responseObject))success
                 failure:(void (^)(NSUInteger statusCode, NSString *error))failure{
-    NSString *jsonStr = @"{\"remark\":\"交流学习\",\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"taskNo\":\"007\",\"userName\":\"简书Haofree\",\"subTaskList\":[{\"subTaskNo\":\"001\",\"subTaskInfo\":\"简洁的DataModel和ViewModel\",\"timestamp\":1487750930515,\"status\":5},{\"subTaskNo\":\"002\",\"subTaskInfo\":\"DataModel和ViewModel层分离\",\"timestamp\":1487750930525,\"status\":10}]}";    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
+    NSString *jsonStr = @"{\"remark\":\"交流学习\",\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"taskNo\":\"007\",\"userName\":\"简书Haofree\",\"subTaskList\":[{\"subTaskNo\":\"001\",\"subTaskInfo\":\"简洁的DataModel和ViewModel\",\"timestamp\":1487750930515,\"status\":5},{\"subTaskNo\":\"002\",\"subTaskInfo\":\"DataModel和ViewModel层分离\",\"timestamp\":1487750930525,\"status\":10}]}";
+    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
     success(responsejsonObject);
 }
 

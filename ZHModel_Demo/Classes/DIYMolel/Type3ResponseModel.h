@@ -31,15 +31,15 @@
 }
 *******************************/
 
-@interface Type3ResponseSubInfoModel : ZHResponseBaseModel
+@interface Type3ResponseSubListModel : ZHResponseBaseModel
 
 @property (nonatomic , copy) NSString *subTaskNo;
 
 @property (nonatomic , copy) NSString *subTaskInfo;
 
-@property (nonatomic , assign) NSInteger *timestamp;
+@property (nonatomic , assign) NSInteger timestamp;
 
-@property (nonatomic , assign) NSInteger *status;
+@property (nonatomic , assign) NSInteger status;
 
 @end
 
