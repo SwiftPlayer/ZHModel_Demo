@@ -18,6 +18,10 @@
 		A5E96E9A1E699E9E0093FD42 /* ZHParamBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96E991E699E9E0093FD42 /* ZHParamBaseModel.m */; };
 		A5E96E9D1E699EE20093FD42 /* ZHViewBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96E9C1E699EE20093FD42 /* ZHViewBaseModel.m */; };
 		A5E96EA61E69A94D0093FD42 /* ZHRequestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96EA41E69A94D0093FD42 /* ZHRequestMethod.m */; };
+		A5E96EAF1E69C2D90093FD42 /* Type1ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96EAE1E69C2D90093FD42 /* Type1ResponseModel.m */; };
+		A5E96EB21E69C3070093FD42 /* Type2ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96EB11E69C3070093FD42 /* Type2ResponseModel.m */; };
+		A5E96EB51E69C3190093FD42 /* Type3ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96EB41E69C3190093FD42 /* Type3ResponseModel.m */; };
+		A5E96EB81E69C3A80093FD42 /* PublicViewBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E96EB71E69C3A80093FD42 /* PublicViewBaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		A5E96EA31E69A94D0093FD42 /* ZHRequestMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHRequestMethod.h; sourceTree = "<group>"; };
 		A5E96EA41E69A94D0093FD42 /* ZHRequestMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHRequestMethod.m; sourceTree = "<group>"; };
 		A5E96EAB1E69B10E0093FD42 /* Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configure.h; sourceTree = "<group>"; };
+		A5E96EAD1E69C2D90093FD42 /* Type1ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type1ResponseModel.h; sourceTree = "<group>"; };
+		A5E96EAE1E69C2D90093FD42 /* Type1ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type1ResponseModel.m; sourceTree = "<group>"; };
+		A5E96EB01E69C3070093FD42 /* Type2ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type2ResponseModel.h; sourceTree = "<group>"; };
+		A5E96EB11E69C3070093FD42 /* Type2ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type2ResponseModel.m; sourceTree = "<group>"; };
+		A5E96EB31E69C3190093FD42 /* Type3ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type3ResponseModel.h; sourceTree = "<group>"; };
+		A5E96EB41E69C3190093FD42 /* Type3ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type3ResponseModel.m; sourceTree = "<group>"; };
+		A5E96EB61E69C3A80093FD42 /* PublicViewBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicViewBaseModel.h; sourceTree = "<group>"; };
+		A5E96EB71E69C3A80093FD42 /* PublicViewBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicViewBaseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				A5E96EAA1E69B10E0093FD42 /* Config */,
+				A5E96EAC1E69C2980093FD42 /* DIYMolel */,
 				A5E96EA01E69A94D0093FD42 /* NetRequest */,
 			);
 			path = Classes;
@@ -163,6 +176,21 @@
 				A5E96EAB1E69B10E0093FD42 /* Configure.h */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		A5E96EAC1E69C2980093FD42 /* DIYMolel */ = {
+			isa = PBXGroup;
+			children = (
+				A5E96EAD1E69C2D90093FD42 /* Type1ResponseModel.h */,
+				A5E96EAE1E69C2D90093FD42 /* Type1ResponseModel.m */,
+				A5E96EB01E69C3070093FD42 /* Type2ResponseModel.h */,
+				A5E96EB11E69C3070093FD42 /* Type2ResponseModel.m */,
+				A5E96EB31E69C3190093FD42 /* Type3ResponseModel.h */,
+				A5E96EB41E69C3190093FD42 /* Type3ResponseModel.m */,
+				A5E96EB61E69C3A80093FD42 /* PublicViewBaseModel.h */,
+				A5E96EB71E69C3A80093FD42 /* PublicViewBaseModel.m */,
+			);
+			path = DIYMolel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +297,15 @@
 			files = (
 				A5E96E9A1E699E9E0093FD42 /* ZHParamBaseModel.m in Sources */,
 				A5E96E9D1E699EE20093FD42 /* ZHViewBaseModel.m in Sources */,
+				A5E96EB51E69C3190093FD42 /* Type3ResponseModel.m in Sources */,
+				A5E96EAF1E69C2D90093FD42 /* Type1ResponseModel.m in Sources */,
 				A5E96E6F1E693B440093FD42 /* ViewController.m in Sources */,
 				A5E96E941E69438C0093FD42 /* ZHResponseBaseModel.m in Sources */,
 				A5E96EA61E69A94D0093FD42 /* ZHRequestMethod.m in Sources */,
 				A5E96E6C1E693B440093FD42 /* AppDelegate.m in Sources */,
 				A5E96E691E693B440093FD42 /* main.m in Sources */,
+				A5E96EB21E69C3070093FD42 /* Type2ResponseModel.m in Sources */,
+				A5E96EB81E69C3A80093FD42 /* PublicViewBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,13 +9,13 @@
 #import "ZHRequestMethod.h"
 @interface ZHRequestMethod()
 
-+ (void)requestType_NO1:(NSDictionary*)param
++ (void)requestType1:(NSDictionary*)param
          success:(void (^)(id responseObject))success
          failure:(void (^)(NSUInteger statusCode, NSString *error))failure;
-+ (void)requestType_NO2:(NSDictionary*)param
++ (void)requestType2:(NSDictionary*)param
           success:(void (^)(id responseObject))success
           failure:(void (^)(NSUInteger statusCode, NSString *error))failure;
-+ (void)requestType_NO3:(NSDictionary*)param
++ (void)requestType3:(NSDictionary*)param
          success:(void (^)(id responseObject))success
          failure:(void (^)(NSUInteger statusCode, NSString *error))failure;
 
@@ -31,47 +31,45 @@
     
     switch (interfaceType) {
         case RequestInterfaceNO1:
-//            [ZHRequestMethod requestType_NO1:parma success:^(id responseObject) {
+//            [ZHRequestMethod requestType1:parma success:^(id responseObject) {
 //                success(responseObject);
 //            } failure:^(NSUInteger statusCode, NSString *error) {
 //                failure(statusCode,error);
 //            }];
-            [ZHRequestMethod requestType_NO1:parma success:success failure:failure];
+            [ZHRequestMethod requestType1:parma success:success failure:failure];
             break;
         case RequestInterfaceNO2:
-            [ZHRequestMethod requestType_NO2:parma success:success failure:failure];
+            [ZHRequestMethod requestType2:parma success:success failure:failure];
             break;
         case RequestInterfaceNO3:
-            [ZHRequestMethod requestType_NO3:parma success:success failure:failure];
+            [ZHRequestMethod requestType3:parma success:success failure:failure];
             break;
         default:
             break;
     }
 }
 
-+ (void)requestType_NO1:(NSDictionary*)param
++ (void)requestType1:(NSDictionary*)param
                success:(void (^)(id responseObject))success
                 failure:(void (^)(NSUInteger statusCode, NSString *error))failure{
-    NSString *jsonStr = @"{\"remark\":\"顺便抓个包\",\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"subTaskPayInfo\":{\"orderInfo\":\"orderInfo信息\"},\"taskOrderNo\":\"76cb3b9160ea43ab96e6c1a8302f85e2\",\"userNo\":\"0000000000153503419\"}";
+    NSString *jsonStr = @"{\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"remark\":\"交流学习\",\"userName\":\"简书Haofree\",\"taskNo\":1}";
     id responsejsonObject = [self dictionaryWithJSON:jsonStr];
     success(responsejsonObject);
 }
 
 
-+ (void)requestType_NO2:(NSDictionary*)param
++ (void)requestType2:(NSDictionary*)param
                success:(void (^)(id responseObject))success
                 failure:(void (^)(NSUInteger statusCode, NSString *error))failure{
-    NSString *jsonStr = @"{\"remark\":\"顺便抓个包\",\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"subTaskPayInfo\":{\"orderInfo\":\"orderInfo信息\"},\"taskOrderNo\":\"76cb3b9160ea43ab96e6c1a8302f85e2\",\"userNo\":\"0000000000153503419\"}";
-    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
+    NSString *jsonStr = @"{\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"remark\":\"交流学习\",\"userName\":\"简书Haofree\",\"taskNo\":\"007\",\"subInfo\":{\"type\":\"info类型\",\"comment\":\"info内容\"}}";    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
     success(responsejsonObject);
 }
 
 
-+ (void)requestType_NO3:(NSDictionary*)param
++ (void)requestType3:(NSDictionary*)param
                success:(void (^)(id responseObject))success
                 failure:(void (^)(NSUInteger statusCode, NSString *error))failure{
-    NSString *jsonStr = @"{\"remark\":\"顺便抓个包\",\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"subTaskPayInfo\":{\"orderInfo\":\"orderInfo信息\"},\"taskOrderNo\":\"76cb3b9160ea43ab96e6c1a8302f85e2\",\"userNo\":\"0000000000153503419\"}";
-    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
+    NSString *jsonStr = @"{\"remark\":\"交流学习\",\"responseCode\":\"0000\",\"responseMsg\":\"返回成功\",\"taskNo\":\"007\",\"userName\":\"简书Haofree\",\"subTaskList\":[{\"subTaskNo\":\"001\",\"subTaskInfo\":\"简洁的DataModel和ViewModel\",\"timestamp\":1487750930515,\"status\":5},{\"subTaskNo\":\"002\",\"subTaskInfo\":\"DataModel和ViewModel层分离\",\"timestamp\":1487750930525,\"status\":10}]}";    id responsejsonObject = [self dictionaryWithJSON:jsonStr];
     success(responsejsonObject);
 }
 

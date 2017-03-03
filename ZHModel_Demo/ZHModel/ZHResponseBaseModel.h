@@ -10,4 +10,6 @@
 
 @interface ZHResponseBaseModel : NSObject
 
+- (void)decodeJsontoDictionary:(NSDictionary*)dic;
+
 @end
