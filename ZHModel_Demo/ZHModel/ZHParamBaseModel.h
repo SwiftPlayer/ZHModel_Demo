@@ -10,4 +10,6 @@
 
 @interface ZHParamBaseModel : NSObject
 
+-(NSDictionary*)covertToDic;
+
 @end

@@ -37,13 +37,7 @@
     [super didReceiveMemoryWarning];
 }
 
-//- (PublicViewBaseModel *)viewModel{
-//    if (_viewModel) {
-//        _viewModel = [[PublicViewBaseModel alloc] init];
-//    }
-//    return _viewModel;
-//}
-
+//返回的数据
 - (void) getResponseDataModel{
     __weak __typeof(self)wekself = self;
     [self.viewModel setBlockWithReturnBlock:^(id returnValue) {
@@ -69,6 +63,7 @@
     }];
 }
 
+//发送的请求
 - (IBAction)requestBtn1:(id)sender{
     [self.viewModel sendType1Request:@{}];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

@@ -20,13 +20,13 @@
 
 @interface Type1ResponseModel : ZHResponseBaseModel
 
-@property (nonatomic , strong) NSString *responseCode;        //响应结果码
+@property (nonatomic , copy) NSString *responseCode;        //响应结果码
 
-@property (nonatomic , strong) NSString *responseMsg;         //响应消息
+@property (nonatomic , copy) NSString *responseMsg;         //响应消息
 
-@property (nonatomic , strong) NSString *remark;              //备注
+@property (nonatomic , copy) NSString *remark;              //备注
 
-@property (nonatomic , strong) NSString *userName;            //名字
+@property (nonatomic , copy) NSString *userName;            //名字
 
 @property (nonatomic , assign) NSInteger taskNo;             //索引号
 
