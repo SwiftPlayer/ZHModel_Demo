@@ -12,8 +12,7 @@ ZHModel_Demo，提供简洁的DataModel和ViewModel示例。将数据请求封�
 >下面我分享下代码，看看DataModel和ViewModel有什么优势或者不足的地方
 
 ####1、目录结构
-
-![目录结构.png](http://upload-images.jianshu.io/upload_images/2646525-a34cee8bb04e6562.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+/Users/Haofree/Downloads/目录结构.png
 我们熟知的程序包含：网络请求、数据、控制器（视图，业务？），有时会把这几个关系弄得绕来绕去，导致代码臃肿，不好复用和维护。但所有情况无非就是：
 >1、数据怎么来？  
 2、数据怎么桥接？
