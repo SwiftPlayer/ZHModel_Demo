@@ -1,4 +1,3 @@
-# ZHModel_Demo
 >很多人试图解决 MVC 这种架构下 Controller 比较臃肿的问题，这里我分享一种简洁易懂的Model层，致力于打造更为简洁的DataModel和ViewModel层，同时也适用Controller更加简洁。下面一起分享学习。[源码：ZHModel_Demo](https://github.com/SwiftPlayer/ZHModel_Demo)
 
 #一、简介
@@ -12,7 +11,8 @@ ZHModel_Demo，提供简洁的DataModel和ViewModel示例。将数据请求封�
 >下面我分享下代码，看看DataModel和ViewModel有什么优势或者不足的地方
 
 ####1、目录结构
-/Users/Haofree/Downloads/目录结构.png
+
+![目录结构.png](http://upload-images.jianshu.io/upload_images/2646525-a34cee8bb04e6562.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 我们熟知的程序包含：网络请求、数据、控制器（视图，业务？），有时会把这几个关系弄得绕来绕去，导致代码臃肿，不好复用和维护。但所有情况无非就是：
 >1、数据怎么来？  
 2、数据怎么桥接？
@@ -440,5 +440,5 @@ typedef void (^FailureBlock)(NSUInteger statusCode, NSString *error);
 }
 ```
 #结语
-文章分享用于交流学习，一直处于学习积累过程中。技术的积累，源于吸取，感谢同事和一起学习的朋友。
+文章分享用于交流学习，一直处于学习积累过程中，文中最开始的思路来自于[李泽鲁---青玉伏案大神的MVVM工程架构](https://github.com/lizelu/MVVM)，在这个基础上做了更多的改进。技术的积累，源于吸取，感谢同事和一起学习的朋友，大家批判指正。
 
